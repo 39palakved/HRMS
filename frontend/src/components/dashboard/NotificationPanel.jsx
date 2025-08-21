@@ -10,7 +10,7 @@ const NotificationPanel = () => {
   useEffect(() => {
     const fetchNotifications = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/notification/admin/get');
+        const res = await axios.get('https://hrms-backend-pink.vercel.app/api/notification/admin/get');
         setNotifications(res.data.notifications);
       } catch (err) {
         console.error('Error fetching notifications:', err);

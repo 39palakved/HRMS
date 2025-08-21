@@ -9,7 +9,7 @@ const View = () => {
   useEffect(() => {
     const fetchEmployee = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/employee/${id}`)
+        const response = await axios.get(`https://hrms-backend-pink.vercel.app/api/employee/${id}`)
         if (response.data.success) {
           console.log(response.data.employee)
           setEmployee(response.data.employee)

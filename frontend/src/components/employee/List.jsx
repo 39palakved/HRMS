@@ -12,7 +12,7 @@ const List = () => {
     const fetchEmployees = async () => {
       setEmpLoading(true)
       try {
-        const response = await axios.get('http://localhost:5000/api/employee')
+        const response = await axios.get('https://hrms-backend-pink.vercel.app/api/employee')
         if (response.data.success) {
           let sno = 1
           const data = response.data.employees.map((emp) => ({
@@ -23,7 +23,7 @@ const List = () => {
             dob: new Date(emp.dob).toLocaleDateString(),
             profileimage: (
               <img
-                src={`http://localhost:5000/${emp.userId.profileimage}`}
+                src={`https://hrms-backend-pink.vercel.app/${emp.userId.profileimage}`}
                 alt="profile"
                 className="w-10 h-10 rounded-full"
               />

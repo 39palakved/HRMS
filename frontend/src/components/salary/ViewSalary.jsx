@@ -8,7 +8,7 @@ const ViewSalary = () => {
      let sno = 1;
      const fetchSalaries = async ()=>{
         try{
-            const response = await axios.get(`http://localhost:5000/api/salary/${id}`,{
+            const response = await axios.get(`https://hrms-backend-pink.vercel.app/api/salary/${id}`,{
                 headers:{
 
                 }

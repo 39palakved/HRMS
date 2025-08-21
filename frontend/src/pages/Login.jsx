@@ -17,7 +17,7 @@ const Login = () => {
 
   const handleLogin = async (values, { setSubmitting, setFieldError }) => {
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', values);
+      const res = await axios.post('https://hrms-backend-pink.vercel.app/api/auth/login', values);
       const { token, user } = res.data;
       localStorage.setItem('token', token);
       localStorage.setItem('user', JSON.stringify(user));

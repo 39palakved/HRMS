@@ -22,7 +22,7 @@ const Register = () => {
 
   const handleSubmit = async (values, { resetForm }) => {
     try {
-      await axios.post('http://localhost:5000/api/auth/register', values);
+      await axios.post('https://hrms-backend-pink.vercel.app/api/auth/register', values);
       alert("Registration successful! Redirecting to login...");
       resetForm();
       navigate('/login');

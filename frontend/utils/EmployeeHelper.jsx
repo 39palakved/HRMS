@@ -40,7 +40,7 @@ export const columns = [
 // Fetch departments
 export const fetchDepartments = async () => {
   try {
-    const response = await axios.get('http://localhost:5000/api/department')
+    const response = await axios.get('https://hrms-backend-pink.vercel.app/api/department')
     if (response.data.success) {
       return response.data.departments
     }

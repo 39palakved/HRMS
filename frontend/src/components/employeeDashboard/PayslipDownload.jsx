@@ -11,7 +11,7 @@ const Payslip = () => {
   const handleSearch = async () => {
     try {
        
-      const res = await axios.get(`http://localhost:5000/api/salary/my-payslip/${user.employeeId}`);
+      const res = await axios.get(`https://hrms-backend-pink.vercel.app/api/salary/my-payslip/${user.employeeId}`);
       if (res.data && res.data.success && res.data.salary) {
         setSalaryData(res.data.salary);
         console.log(salaryData)

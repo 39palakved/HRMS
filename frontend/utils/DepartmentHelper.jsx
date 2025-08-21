@@ -26,7 +26,7 @@ export const DepartmentButton=({_id,onDepartmentDelete})=>{
          if(confirm){
      try{
        
-        const response = await axios.delete(`http://localhost:5000/api/department/${id}`,{
+        const response = await axios.delete(`https://hrms-backend-pink.vercel.app/api/department/${id}`,{
           headers:{
 
           }
