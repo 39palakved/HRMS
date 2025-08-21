@@ -52,7 +52,7 @@ export const fetchDepartments = async () => {
 export const getEmployees = async (id) => {
   let employees
   try {
-    const response = await axios.get(`http://localhost:5000/api/employee/department/${id}`)
+    const response = await axios.get(`https://hrms-backend-pink.vercel.app/api/employee/department/${id}`)
     if (response.data.success) {
       return response.data.employees
     }
