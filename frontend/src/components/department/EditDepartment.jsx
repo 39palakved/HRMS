@@ -37,7 +37,7 @@ const EditDepartment = () => {
     const fetchDepartments = async()=>{
       setDeptLoading(true);
       try{
-        const response = await axios.get(`http://localhost:5000/api/department/${id}`,{
+        const response = await axios.get(`https://hrms-backend-pink.vercel.app/api/department/${id}`,{
           headers:{
 
           }

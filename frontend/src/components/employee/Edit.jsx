@@ -62,7 +62,7 @@ useEffect(() => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/employee/${id}`,
+        `https://hrms-backend-pink.vercel.app/api/employee/${id}`,
         employee
       );
 
