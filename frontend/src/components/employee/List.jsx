@@ -23,7 +23,7 @@ const List = () => {
             dob: new Date(emp.dob).toLocaleDateString(),
             profileimage: (
               <img
-                src={`https://hrms-backend-pink.vercel.app/${emp.userId.profileimage}`}
+                src={`https://hrms-backend-pink.vercel.app/uploads/${emp.userId.profileimage}`}
                 alt="profile"
                 className="w-10 h-10 rounded-full"
               />

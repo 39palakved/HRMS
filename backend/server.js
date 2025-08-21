@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
   res.send('API is up and running!')
 })
 app.use('/api/auth', authRoutes);
-app.use(express.static('public/uploads'))
+
 app.use('/api/department',departmentRouter)
 app.use("/api/employee", employeeRouter);
 app.use("/api/dashboard",dashboardRouter)

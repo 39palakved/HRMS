@@ -34,7 +34,7 @@ const View = () => {
             <div className="flex justify-center">
               <div className="bg-gray-50 p-4 rounded-full shadow-inner border w-fit">
                 <img
-                  src={`https://hrms-backend-pink.vercel.app/${employee.userId.profileimage}`}
+                  src={`https://hrms-backend-pink.vercel.app/uploads/${employee.userId.profileimage}`}
                   alt="profile"
                   className="w-40 h-40 object-cover rounded-full border-2 border-teal-500"
                 />
