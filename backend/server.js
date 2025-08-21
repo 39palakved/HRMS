@@ -15,7 +15,7 @@ dotenv.config()
 const app = express()
 
 app.use(cors({
-  origin:"https://hrms-frontend-lime-ten.vercel.app/",
+  origin:"https://hrms-frontend-lime-ten.vercel.app",
   credentials: true
 }))
 app.use(express.json())
