@@ -19,7 +19,7 @@ app.use(cors({
   credentials: true
 }))
 app.use(express.json())
-
+app.use("/uploads", express.static("uploads"));
 app.get('/', (req, res) => {
   res.send('API is up and running!')
 })
